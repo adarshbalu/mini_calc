@@ -203,12 +203,12 @@ class _CalculatorState extends State<Calculator> {
                           isOperator: false,
                         ),
                         Button(
-                          onTap: () => decimal(isSecondNumber ? num2 : num1),
+                          //onTap: () => decimal(isSecondNumber ? num2 : num1),
                           buttonText: '.',
                           isOperator: true,
                         ),
                         Button(
-                          onTap: () => neg(isSecondNumber ? num2 : num1),
+                          //onTap: () => neg(isSecondNumber ? num2 : num1),
                           buttonText: '+/-',
                           isOperator: true,
                         ),
@@ -362,6 +362,8 @@ class _CalculatorState extends State<Calculator> {
   void neg(double d) {
     setState(() {
       isSecondNumber ? num2 = -num2 : num1 = -num1;
+      controller.value = TextEditingValue(
+          text: isSecondNumber ? num2.toString() : num1.toString());
     });
   }
 }
