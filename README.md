@@ -1,6 +1,18 @@
-# minicalc
+# MiniCalc
 
 A minimal  Calculator made using Flutter.
+
+## Interface
+
+### Screen 1
+
+![Screen1](https://github.com/adarshbalu/mini_calc/blob/master/minicalc.png?raw=true)
+
+### Screen 2
+
+![Screen2](https://github.com/adarshbalu/mini_calc/blob/master/minicalcc.png?raw=true)
+
+
 
 ## Getting Started
 
