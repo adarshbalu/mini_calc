@@ -1,10 +1,12 @@
 # Mini Calc
 
-Mini Calc is free and Open Source, Cross Platform Application developed using [Flutter](https://github.com/flutter/flutter).
-
-## About
-
 Mini Calc is a minimal calculator with all the basic calculation operations.
+## Screenshots
+
+<img src="https://github.com/adarshbalu/mini_calc/blob/master/minicalc.png?raw=true" width="350" height="470" align="left">
+
+
+<img src="https://github.com/adarshbalu/mini_calc/blob/master/minicalcc.png?raw=true" width="350" height="470" align="center">
 
 
 ## Features :
@@ -14,15 +16,6 @@ Mini Calc is a minimal calculator with all the basic calculation operations.
 - All basic calculations.
 - Fast calculation results.
 
-## Screenshots
-
-### Main Screen
-
-<img src="https://github.com/adarshbalu/mini_calc/blob/master/minicalc.png?raw=true" width="350" height="500">
-
-### Results
-
-<img src="https://github.com/adarshbalu/mini_calc/blob/master/minicalcc.png?raw=true" width="350" height="500">
 
 ## Permissions
 
