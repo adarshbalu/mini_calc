@@ -1,18 +1,41 @@
-# MiniCalc
+# Mini Calc
 
-A minimal  Calculator made using Flutter.
+Mini Calc is free and Open Source, Cross Platform Application developed using [Flutter](https://github.com/flutter/flutter).
 
-## Interface
+## About
 
-### Screen 1
-
-![Screen1](https://github.com/adarshbalu/mini_calc/blob/master/minicalc.png?raw=true)
-
-### Screen 2
-
-![Screen2](https://github.com/adarshbalu/mini_calc/blob/master/minicalcc.png?raw=true)
+Mini Calc is a minimal calculator with all the basic calculation operations.
 
 
+## Features :
+
+- Completely ad-free.
+- Has a minimal user interface.
+- All basic calculations.
+- Fast calculation results.
+
+## Screenshots
+
+### Main Screen
+
+<img src="https://github.com/adarshbalu/mini_calc/blob/master/minicalc.png?raw=true" width="350" height="500">
+
+### Results
+
+<img src="https://github.com/adarshbalu/mini_calc/blob/master/minicalcc.png?raw=true" width="350" height="500">
+
+## Permissions
+
+Mini Calc does not ask for any permissions.
+
+## Contributing
+
+Mini Calc is a free and open source project. Any contributions are welcome. Here are a few ways you can help:
+ * [Report bugs and make suggestions.](https://github.com/adarshbalu/mini_calc/issues)
+ * [Open a pull Request](https://github.com/adarshbalu/mini_calc/pulls)
+ 
+
+<hr>
 
 ## Getting Started
 
