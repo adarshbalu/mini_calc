@@ -9,13 +9,10 @@ class Calculator extends StatefulWidget {
 
 class _CalculatorState extends State<Calculator> {
   TextEditingController controller;
-  double num1 = 0, num2 = 0, result = 0;
-  String operator = '!', helper = '';
-  bool isSecondNumber = false, resultFound = false;
 
   @override
   void initState() {
-    controller = TextEditingController(text: num1.toString());
+    controller = TextEditingController(text: 0.toString());
     super.initState();
   }
 
@@ -46,7 +43,7 @@ class _CalculatorState extends State<Calculator> {
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: <Widget>[
                       Text(
-                        helper,
+                        '',
                         style: TextStyle(
                             fontSize: 30,
                             letterSpacing: 1.1,
@@ -83,126 +80,124 @@ class _CalculatorState extends State<Calculator> {
           ),
           Expanded(
             flex: 3,
-            child: SingleChildScrollView(
-              child: Container(
-                decoration: BoxDecoration(color: Color(0xff060607)),
-                child: Column(
-                  children: <Widget>[
-                    SizedBox(
-                      height: 30,
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: <Widget>[
-                        Button(
-                          buttonText: 'ac',
-                          isOperator: true,
-                        ),
-                        Button(
-                          buttonText: 'c',
-                          isOperator: true,
-                        ),
-                        Button(
-                          buttonText: '%',
-                          isOperator: true,
-                        ),
-                        Button(
-                          buttonText: '/',
-                          isOperator: true,
-                        ),
-                      ],
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: <Widget>[
-                        Button(
-                          buttonText: '7',
-                          isOperator: false,
-                        ),
-                        Button(
-                          buttonText: '8',
-                          isOperator: false,
-                        ),
-                        Button(
-                          buttonText: '9',
-                          isOperator: false,
-                        ),
-                        Button(
-                          buttonText: '*',
-                          isOperator: true,
-                        ),
-                      ],
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: <Widget>[
-                        Button(
-                          buttonText: '4',
-                          isOperator: false,
-                        ),
-                        Button(
-                          buttonText: '5',
-                          isOperator: false,
-                        ),
-                        Button(
-                          buttonText: '6',
-                          isOperator: false,
-                        ),
-                        Button(
-                          buttonText: '-',
-                          isOperator: true,
-                        ),
-                      ],
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: <Widget>[
-                        Button(
-                          buttonText: '1',
-                          isOperator: false,
-                        ),
-                        Button(
-                          buttonText: '2',
-                          isOperator: false,
-                        ),
-                        Button(
-                          buttonText: '3',
-                          isOperator: false,
-                        ),
-                        Button(
-                          buttonText: '+',
-                          isOperator: true,
-                        ),
-                      ],
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: <Widget>[
-                        Button(
-                          buttonText: '0',
-                          isOperator: false,
-                        ),
-                        Button(
-                          buttonText: '.',
-                          isOperator: true,
-                        ),
-                        Button(
-                          buttonText: '+/-',
-                          isOperator: true,
-                        ),
-                        Button(
-                          buttonText: '=',
-                          isOperator: true,
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
+            child: Container(
+              decoration: BoxDecoration(color: Color(0xff060607)),
+              child: Column(
+                children: <Widget>[
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      Button(
+                        buttonText: 'ac',
+                        isOperator: true,
+                      ),
+                      Button(
+                        buttonText: 'c',
+                        isOperator: true,
+                      ),
+                      Button(
+                        buttonText: '%',
+                        isOperator: true,
+                      ),
+                      Button(
+                        buttonText: '/',
+                        isOperator: true,
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      Button(
+                        buttonText: '7',
+                        isOperator: false,
+                      ),
+                      Button(
+                        buttonText: '8',
+                        isOperator: false,
+                      ),
+                      Button(
+                        buttonText: '9',
+                        isOperator: false,
+                      ),
+                      Button(
+                        buttonText: '*',
+                        isOperator: true,
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      Button(
+                        buttonText: '4',
+                        isOperator: false,
+                      ),
+                      Button(
+                        buttonText: '5',
+                        isOperator: false,
+                      ),
+                      Button(
+                        buttonText: '6',
+                        isOperator: false,
+                      ),
+                      Button(
+                        buttonText: '-',
+                        isOperator: true,
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      Button(
+                        buttonText: '1',
+                        isOperator: false,
+                      ),
+                      Button(
+                        buttonText: '2',
+                        isOperator: false,
+                      ),
+                      Button(
+                        buttonText: '3',
+                        isOperator: false,
+                      ),
+                      Button(
+                        buttonText: '+',
+                        isOperator: true,
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      Button(
+                        buttonText: '0',
+                        isOperator: false,
+                      ),
+                      Button(
+                        buttonText: '.',
+                        isOperator: true,
+                      ),
+                      Button(
+                        buttonText: '+/-',
+                        isOperator: true,
+                      ),
+                      Button(
+                        buttonText: '=',
+                        isOperator: true,
+                      ),
+                    ],
+                  ),
+                ],
               ),
             ),
           )

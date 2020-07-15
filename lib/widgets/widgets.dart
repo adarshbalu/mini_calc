@@ -13,12 +13,12 @@ class Button extends StatelessWidget {
     }
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 5, vertical: 3),
-      height: MediaQuery.of(context).size.height / 9,
+      height: MediaQuery.of(context).size.height / 8,
       width: MediaQuery.of(context).size.width / 4.5,
       child: Text(
         buttonText,
         textAlign: TextAlign.center,
-        style: TextStyle(color: color, fontSize: 30),
+        style: TextStyle(color: color, fontSize: 32),
       ),
     );
   }
