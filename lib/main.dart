@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Minimal Calculator',
+      title: 'Mini Calc',
       home: Calculator(),
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: Color(0xff060607),
