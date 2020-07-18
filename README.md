@@ -4,7 +4,7 @@ Mini Calc is free and Open Source, Cross Platform Application developed using [F
 
 ## About
 
-Mini Calc is a minimal calculator with all the basic calculation operations.
+Mini Calc is a minimal calculator UI with all the basic calculation operations.
 
 
 ## Features :
